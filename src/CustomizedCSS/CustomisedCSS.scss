@@ -1,0 +1,35 @@
+.carousel-control-next-icon {
+    background-color: #000000;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .carousel-control-prev-icon {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+.slick-prev:before{
+  background-color: black;
+  margin-bottom: -100px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.slick-next:before{
+  background-color: black;
+  border-radius: 50%;
+  padding: 2px;
+}
+// ------- PRoduct details ---------------
+.imageOptions{
+  display: block;
+}
+/* Media query for screens narrower than 750px */
+@media (max-width: 768px) {
+  .imageOptions {
+    display: flex; 
+    flex-wrap: wrap;
+  }
+}

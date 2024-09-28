@@ -1,0 +1,14 @@
+*{
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box !important;
+}
+body{
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box !important;
+}
+/* ------- Product Details page ----------------------- */
+.form-select{
+  padding-left: 7px !important ;
+}
