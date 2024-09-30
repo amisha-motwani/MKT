@@ -112,7 +112,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                 style={{ borderBottom: "0.1px solid #f4f4f4" }}
               >
                 <NavLink to="/AboutUs" onClick={handleCloseSidebar}>
-                  <b>ABOUT</b>
+                  <b>ABOUT US</b>
                 </NavLink>
               </li>
               <li

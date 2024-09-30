@@ -100,7 +100,7 @@ export default function Navbar({ children }) {
                   </li> */}
                   <li className="">
                     <NavLink to="/AboutUs" onClick={() => setIsProduct(false)}>
-                      <b>ABOUT</b>
+                      <b>ABOUT US</b>
                     </NavLink>
                   </li>
 

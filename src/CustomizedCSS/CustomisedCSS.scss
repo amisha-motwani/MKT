@@ -1,35 +1,59 @@
 .carousel-control-next-icon {
-    background-color: #000000;
-    color: white;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  .carousel-control-prev-icon {
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    padding: 5px;
-  }
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.carousel-control-prev-icon {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
 
-.slick-prev:before{
+.slick-prev:before {
   background-color: black;
   margin-bottom: -100px;
   border-radius: 50%;
   padding: 2px;
 }
-.slick-next:before{
+.slick-next:before {
   background-color: black;
   border-radius: 50%;
   padding: 2px;
 }
 // ------- PRoduct details ---------------
-.imageOptions{
+.imageOptions {
   display: block;
 }
 /* Media query for screens narrower than 750px */
 @media (max-width: 768px) {
   .imageOptions {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
+  }
+}
+// ========================= ABOUT US ==================================
+.MissionHandLogo {
+  font-size: 25px !important;
+  color: #c7295f;
+}
+.vertical-timeline-element-content {
+  margin-left: 50px !important;
+  margin-right: -10px !important;
+}
+
+.vertical-timeline::before {
+  background: #e8653f;
+  width: 4px;
+}
+@media (min-width: 1025px) {
+  .vertical-timeline::before {
+    margin-left: 30px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .vertical-timeline-element-content{
+    margin-top: 30px !important;
   }
 }
