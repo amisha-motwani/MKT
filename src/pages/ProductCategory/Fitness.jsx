@@ -50,17 +50,8 @@ export default function Fitness() {
     <>
       <Container fluid>
         <Row>
-          <Col xs={12} className="text-center my-3 px-3">
-            <h1>Custom Fitness Clothing</h1>
-            <p>
-              Our range of Custom Fitness Clothing includes uniforms, apparel,
-              accessories and a selection of case studies.
-            </p>
-          </Col>
-        </Row>
-        <Row>
           <Col xs={12}>
-            <div className="flex flex-wrap justify-evenly gap-2">
+            <div className="flex flex-wrap justify-evenly gap-2 my-3">
               {data?.map((data, index) => (
                 <ProductCard key={index} product={data} 
                   onClick={() => handleDetailsClick(product)}

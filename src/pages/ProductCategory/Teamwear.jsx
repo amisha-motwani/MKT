@@ -53,20 +53,8 @@ const Teamwear = () => {
     <>
       <Container fluid>
         <Row>
-          <Col className="my-3 text-center px-3">
-            <h1>Custom Club & Teamwear</h1>
-            <p>
-              Get high-quality custom teamwear for your club or event. Upload
-              your logos and personalisation using our easy-to-use online
-              designer to the sports team hoodies and clothing of your choice.
-              With years of experience providing customised team clothing your
-              in safe hands when you order through us.
-            </p>
-          </Col>
-        </Row>
-        <Row>
           <Col xs={12}>
-            <div className="flex flex-wrap justify-evenly gap-2 ">
+            <div className="flex flex-wrap justify-evenly gap-2 my-3">
             {data?.map((product, index) => (
                 <ProductCard
                   key={index}

@@ -51,23 +51,10 @@ const Corporate = () => {
   return (
     <>
       <Container fluid>
-        <Row>
-          <Col className="text-center my-3 px-3">
-            <h1>Corporate Sports Clothing</h1>
-            <p>
-              Check out our top-selling corporate sports apparel choices,
-              featuring a direct link to our Corporate Running Shirts page
-              offering a wide range of technical, gender-specific, and
-              environmentally friendly T-shirts, as well as some illustrations
-              of the personalised sportswear we've produced for our clients.
-              Consult our blog for suggestions and tips on what to wear to your
-              corporate sports activity.
-            </p>
-          </Col>
-        </Row>
+ 
         <Row>
           <Col xs={12}>
-            <div className="flex flex-wrap justify-evenly gap-2">
+            <div className="flex flex-wrap justify-evenly gap-2 my-3">
               {data?.map((data, index) => (
                 <ProductCard key={index} product={data}
                 onClick={() => handleDetailsClick(product)} />

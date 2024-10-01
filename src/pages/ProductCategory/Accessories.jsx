@@ -53,23 +53,8 @@ const Accessories = () => {
     <>
       <Container fluid>
         <Row>
-          <Col xs={12} className="text-center my-3 px-3">
-            <h1>Accessories & Events</h1>
-            <p>
-              Are you looking for specific custom clothing for your sport or
-              event? Our range of custom Accessories apparel has been selected
-              with your needs in mind. From running to golf we have got it
-              covered. Our ranges make it easy for you to choose clothing that
-              complements your branding and logos. Once you have placed your
-              order our production team will tap into their years of printing
-              experience to ensure that your items are reproduced to the highest
-              quality.
-            </p>
-          </Col>
-        </Row>
-        <Row>
           <Col xs={12}>
-            <div className="flex flex-wrap justify-evenly gap-2 ">
+            <div className="flex flex-wrap justify-evenly gap-2 my-3">
               {data?.map((data, index) => (
                 <ProductCard key={index} product={data}
                 onClick={() => handleDetailsClick(product)} />
