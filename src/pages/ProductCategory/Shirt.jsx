@@ -45,8 +45,8 @@ function Shirt() {
     console.log("Details clicked");
     console.log(product); 
     const ID = product._id;
-    navigate(`./Details/${ID}`);
-  };
+    navigate(`/Details/${ID}`);
+  }; 
 
   console.log("data==>", data);
 

@@ -18,10 +18,13 @@ const Sports = () => {
           "Secret-Key": "JourneyToSuccess",
         };
 
-        const response = await fetch(`${BASE_URL}/api/notes/fetchallSearched/Product?category=Sportswear`, {
-          method: "GET",
-          headers: headers,
-        });
+        const response = await fetch(
+          `${BASE_URL}/api/notes/fetchallSearched/Product?category=Sportswear`,
+          {
+            method: "GET",
+            headers: headers,
+          }
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -39,11 +42,11 @@ const Sports = () => {
 
   const handleDetailsClick = (product) => {
     console.log("Details clicked");
-    console.log(product); 
+    console.log(product);
     const ID = product._id;
-    navigate(`./Details/${ID}`);
-  }; 
-  
+    navigate(`/Details/${ID}`);
+  };
+
   console.log("data==>", data);
 
   return (
@@ -53,8 +56,11 @@ const Sports = () => {
           <Col xs={12}>
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
               {data?.map((data, index) => (
-                <ProductCard key={index} product={data}
-                onClick={() => handleDetailsClick(product)} />
+                <ProductCard
+                  key={index}
+                  product={data}
+                  onClick={() => handleDetailsClick(product)}
+                />
               ))}
             </div>
           </Col>
