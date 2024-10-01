@@ -210,19 +210,19 @@ function AboutUs() {
   return (
     <>
       <div className="w-[94%] mx-auto">
-        <h1 className="text-3xl mt-2 text-[#e8653f] text-center">
+        <h1 className="text-2xl mt-2 text-[#e8653f] text-center">
           <b>ABOUT US</b>
         </h1>
       </div>
       <div className="w-[94%] mx-auto">
         <p>
-          <span className="text-justify my-4 block">
+          <span className="text-justify my-2 block">
             Our goal at MK Textiles is to supply premium textile solutions to a
             range of sectors. We deliver items that not only meet but also
             surpass our clients' expectations because we are dedicated to
             excellence.
           </span>
-          <span className="text-justify my-4 block">
+          <span className="text-justify my-2 block">
             Our areas of expertise include sportswear, teamwear, corporate
             attire, school uniforms, shirts, and accessories. Every category is
             expertly designed, guaranteeing that every article of clothing is
@@ -230,31 +230,31 @@ function AboutUs() {
             highly talented craftspeople, our modern factory enables us to
             maintain the highest levels of quality in our production processes.
           </span>
-          <span className="text-justify my-4 block">
+          <span className="text-justify my-2 block">
             Apart from our regular products, we also specialize in making
             clothes that are specially customized to each individual customer's
             needs. We are able to produce clothes that accurately represent your
             brand and ideas thanks to this customized approach.
           </span>
-          <span className="text-justify my-4 block">
+          <span className="text-justify my-2 block">
             At MK Textiles, we think style and utility go hand in hand. Our wide
             selection of goods is made to offer outstanding value, guaranteeing
             our customers' total happiness. By offering the best in textile
             innovation and design and developing enduring connections based on
             quality and trust, we are dedicated to assisting you in succeeding.
           </span>
-          <span className="text-justify my-4 block">
+          <span className="text-justify my-2 block">
             Allow us to work with you to develop exceptional textile solutions
             that will make a lasting impression on the market. With our capacity
             for manufacturing and commitment to quality, we guarantee that every
             project is carried out with care and accuracy.
           </span>
-          <span className="text-justify my-4 block"></span>
+          <span className="text-justify my-2 block"></span>
         </p>
       </div>
       <div className="w-[94%] mx-auto">
         <h1 className="text-2xl my-4 text-[#e8653f] text-center">
-          <b className="mb-">Our Vission</b>
+          <b className="my-0">Our Vission</b>
         </h1>
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo" />

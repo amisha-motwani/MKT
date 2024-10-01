@@ -5,7 +5,7 @@ function BeyondBusiness() {
   return (
     <>
       <div className="w-[95%] mx-auto mt-3">
-        <h1 className="text-2xl my-4 text-center text-[#e8653f]">Women Empowerment in Our Factory</h1>
+        <h1 className="text-xl my-4 text-center text-[#e8653f]"><b>Women Empowerment in Our Factory</b></h1>
         <p className="text-justify">
           <span className="block">
             Women are empowered at every level in the work environment that we
@@ -38,7 +38,7 @@ function BeyondBusiness() {
           </span>
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full my-3">
         <img src={WomenWorking} className="w-full" />
       </div>
     </>

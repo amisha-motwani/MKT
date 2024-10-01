@@ -4,7 +4,7 @@ function Pioneers() {
   return (
     <>
       <div className="w-[94%] mx-auto">
-        <h1 className="text-2xl my-4 text-[#e8653f] text-center">
+        <h1 className="my-4 text-xl text-[#e8653f] text-center">
           <b className="mb-">PIONEERS</b>
         </h1>
         <p className="text-justify">
@@ -23,15 +23,15 @@ function Pioneers() {
           procedures and ethical sourcing, guaranteeing that our apparel
         </p>
       </div>
-      <div className="flex flex-wrap justify-between w-[94%]">
-        <div className="w-[45%] border-1 shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
+      <div className="md:flex block justify-between md:w-[94%] w-[85%] mx-auto">
+        <div className="md:w-[45%] w-[100%] rounded-lg border-1 shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
           <div className="w-[300px] h-[300px] rounded-full border-1 mx-auto mb-3">
             <img src="" alt="" />
           </div>
           <h1 className="text-center">
             <b>Soniya C Motwani </b>
           </h1>
-          <p className="text-justify px-5 mt-4">
+          <p className="text-justify px-5">
             Dr. Soniya C. Motwani is an entrepreneur and the founder and driving
             force behind MK Textiles, bringing a multidisciplinary skill set to
             the company. She holds an MBA from ASCI, Hyderabad, an MA in
@@ -40,7 +40,7 @@ function Pioneers() {
             Textiles to deliver exceptional quality in every product.
           </p>
         </div>
-        <div className="w-[45%] border-1 shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
+        <div className="md:w-[45%] w-[100%] border-1 rounded-lg shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
           <div className="w-[300px] h-[300px] rounded-full border-1 mx-auto mb-3">
             <img src="" alt="" />
           </div>
@@ -52,13 +52,12 @@ function Pioneers() {
             specializing in customized garment manufacturing. He earned his MBA
             in Sales and Marketing from G. H. Raisoni College in Nagpur and has
             over eight years of valuable experience in the garment industry. His
-            expertise and strategic vision have been instrumental in
-            establishing our company as a leader in the industry.
+            expertise and strategic vision in our company as a leader in the industry.
           </p>
         </div>
       </div>
       <div className=" w-[94%] border-1 shadow-2xl mx-auto bg-white h-[fit-content] mt-5 mb-3 text-black py-4">
-        <h1 className="text-2xl mb-3 text-[#e8653f] text-center">
+        <h1 className="text-xl mb-3 text-[#e8653f] text-center">
           <b className="">Our Vission</b>
         </h1>
         <p className="text-justify px-3">
@@ -77,7 +76,7 @@ function Pioneers() {
             organization.
           </span>
           <span className="block mb-2 mt-4">
-            <h2 className="text-xl">Our Commitment:</h2>
+            <h2 className="md:text-xl text-lg text-[#c72a5f]"><b>Our Commitment:</b></h2>
             <ul className="mt-2">
               <li className="my-1">
                 <strong>Equal Opportunities:</strong> We strive to provide equal

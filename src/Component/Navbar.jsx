@@ -47,7 +47,7 @@ export default function Navbar({ children }) {
             className=""
             onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <LuMenuSquare 
-            className="text-[24px] text-gray-600 my-2"
+            className="text-[24px] text-gray-600 my-2 me-3"
             onClick={() => setIsSideBarVisible(true)} />
             <MobileToggleSideBar
                isSideBarVisible={isSideBarVisible}

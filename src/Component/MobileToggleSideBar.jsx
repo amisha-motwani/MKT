@@ -25,7 +25,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
             <div className="flex w-[100%] mx-auto justify-between my-1 px-1">
               <span>Menu</span>
               <div className="close my-1" onClick={handleCloseSidebar}>
-                <AiOutlineClose />
+                <AiOutlineClose className="me-2" />
               </div>
             </div>
           </header>

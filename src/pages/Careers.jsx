@@ -12,7 +12,7 @@ function Careers() {
   return (
     <>
       <div className="w-[94%] mx-auto">
-        <h1 className="text-3xl mt-2 text-[#e8653f] text-center">
+        <h1 className="text-2xl mt-2 text-[#e8653f] text-center">
           <b>Careers at MK Textiles</b>
         </h1>
         <p className="my-3">
@@ -54,7 +54,7 @@ function Careers() {
             greatness together.
           </span>
         </p>
-        <h1 className="text-2xl my-4 text-[#e8653f] ">
+        <h1 className="text-xl my-4 text-[#e8653f] ">
           <b className="mb-">Why Join MK Textiles?</b>
         </h1>
         <ul className="space-y-2 text-base text-gray-700">
@@ -99,48 +99,48 @@ function Careers() {
             </span>
           </li>
         </ul>
-        <div className="bg-[#eef1f1] py-3">
-          <h1 className="text-center m-3 text-xl">
+        <div className="bg-[#eef1f1] pt-3 pb-4 my-5 rounded-lg">
+          <h1 className="text-center mt-3 mb-1 text-xl">
             <b>OUR WORK VALUES</b>
           </h1>
-          <div className="flex flex-wrap justify-evenly">
-            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg">
+          <div className="flex flex-wrap justify-evenly gap-1">
+            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Reliable} alt="" className="mx-auto" />
               <h1 className="text-center my-2">
                 <b>Reliable</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Innovation} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Innovation</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={ResultsOriented} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Results-oriented environment</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={ResultsOriented} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Results-oriented environment</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Teamwork} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Teamwork</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Adaptability} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Adaptability</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg">
+            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={Recognizing} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Recognizing and nurturing talent</b>
@@ -148,9 +148,9 @@ function Careers() {
             </div>
           </div>
         </div>
-        <div className="w-full flex mt-5 mb-5">
-          <div className="w-[50%]">
-            {" "}
+        <div className="w-full md:flex block mt-5 mb-5">
+          <div className="md:w-[50%] w-[100%] mx-auto">
+            
             <h1 className="text-2xl mt-4 text-[#e8653f]">
               <b>Join Us on Our Journey</b>
             </h1>
@@ -174,7 +174,7 @@ function Careers() {
               </span>
             </p>
           </div>
-          <div className="w-[50%]">
+          <div className="md:w-[50%] w-[100%] mx-auto">
             <img src={BusinessDeal} alt="" />
           </div>
         </div>
