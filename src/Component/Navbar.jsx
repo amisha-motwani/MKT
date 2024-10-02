@@ -79,7 +79,7 @@ export default function Navbar({ children }) {
                     </NavLink>
                   </li>
                   <li onClick={() => setIsProduct(!isProduct)}>
-                    <NavLink to="/Shirts" >
+                    <NavLink to="/" >
                       <b>PRODUCT CATEGORY</b>
                     </NavLink>
                   </li>
@@ -121,7 +121,7 @@ export default function Navbar({ children }) {
               className="d-flex py-4 justify-content-center bg-[#e9643c] text-white"
             >
               <div className="d-flex justify-between w-[97%] mx-auto">
-                <NavLink to="/Shirts">
+                <NavLink to="/">
                   <div className="text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]">
                     <b>SHIRT</b>
                   </div>

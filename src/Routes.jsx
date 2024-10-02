@@ -29,8 +29,8 @@ const AppRoutes = () => {
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/DesignYourOwn" element={<DesignYourOwn />} />
-            <Route path="/Shirts" element={<Shirt />} />
-            <Route path="/" element={<Teamwear />} />
+            <Route path="/" element={<Shirt />} />
+            <Route path="/Teamwear" element={<Teamwear />} />
             <Route path="/Sports" element={<Sports />} />
             <Route path="/Corporate" element={<Corporate />} />
             <Route path="/Fitness" element={<Fitness />} />

@@ -1,4 +1,6 @@
-import React from "react";
+import React from "react"; 
+import AkashChawla from "../Images/AkashChawla.png";
+import SoniyaChawla from "../Images/SoniyaChawla.png";
 
 function Pioneers() {
   return (
@@ -25,8 +27,8 @@ function Pioneers() {
       </div>
       <div className="md:flex block justify-between md:w-[94%] w-[85%] mx-auto">
         <div className="md:w-[45%] w-[100%] rounded-lg border-1 shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
-          <div className="w-[300px] h-[300px] rounded-full border-1 mx-auto mb-3">
-            <img src="" alt="" />
+          <div className="w-full mx-auto mb-3 flex justify-center items-center">
+            <img src={SoniyaChawla} alt="" className="w-[210px] h-[320px] mx-auto" />
           </div>
           <h1 className="text-center">
             <b>Soniya C Motwani </b>
@@ -41,8 +43,8 @@ function Pioneers() {
           </p>
         </div>
         <div className="md:w-[45%] w-[100%] border-1 rounded-lg shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
-          <div className="w-[300px] h-[300px] rounded-full border-1 mx-auto mb-3">
-            <img src="" alt="" />
+          <div className="w-full mx-auto mb-3 flex justify-center items-center">
+            <img src={AkashChawla} alt="" className="w-[210px] h-[300px] mx-auto"/>
           </div>
           <h1 className="text-center">
             <b>Akash K Chawla</b>
