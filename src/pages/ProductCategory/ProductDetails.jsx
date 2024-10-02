@@ -88,15 +88,6 @@ function ProductDetails() {
 
   // ------Whatsapp code ---------
 
-  // const handleWant = () => {
-
-  //   const message = `Hello, I'm interested in the following product:\n\nTitle: ${data?.title}\nDescription: ${data?.description}\nColour: ${selectedColor}\nSize: ${selectedSize}\nImage: ${BASE_URL}/${image}`;
-
-  //   const phoneNumber = "+919039333112"; // Replace with the phone number you want to send the message to
-  //   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-
-  //   window.open(whatsappUrl, "_blank"); // Open WhatsApp chat in a new tab
-  // };
   const handleWant = () => {
     const message = `Hello, I'm interested in the following product:\n\nTitle: ${data?.title}\nDescription: ${data?.description}\nColour: ${selectedColor}\nSize: ${selectedSize}\nImage: ${BASE_URL}/${image}\Product code: ${data.Product_code}`;
     const phoneNumber = "+919039333112"; // Replace with the phone number you want to send the message to
