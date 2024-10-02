@@ -124,7 +124,7 @@ function ProductDetails() {
             <img
               src={`${BASE_URL}/${image}`}
               alt="Product Image"
-              className=" w-[500px] h-[550px] rounded-[10px] "
+              className=" md:w-[500px] md:h-[550px] sm:w-[400px] sm:h-[450px] w-[300px] h-[350px] rounded-[10px] mx-auto"
             />
           )}
         </div>
