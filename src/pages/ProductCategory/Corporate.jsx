@@ -55,9 +55,12 @@ const Corporate = () => {
         <Row>
           <Col xs={12}>
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
-              {data?.map((data, index) => (
-                <ProductCard key={index} product={data}
-                onClick={() => handleDetailsClick(product)} />
+            {data?.map((product, index) => (
+                <ProductCard
+                  key={index}
+                  product={product}
+                  onClick={() => handleDetailsClick(product)}
+                />
               ))}
             </div>
           </Col>

@@ -60,7 +60,6 @@ const Teamwear = () => {
                   key={index}
                   product={product}
                   onClick={() => handleDetailsClick(product)}
-                 
                 />
               ))}
             </div>

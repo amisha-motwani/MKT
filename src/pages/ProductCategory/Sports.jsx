@@ -55,10 +55,10 @@ const Sports = () => {
         <Row>
           <Col xs={12}>
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
-              {data?.map((data, index) => (
+            {data?.map((product, index) => (
                 <ProductCard
                   key={index}
-                  product={data}
+                  product={product}
                   onClick={() => handleDetailsClick(product)}
                 />
               ))}

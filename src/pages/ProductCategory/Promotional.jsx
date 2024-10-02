@@ -60,7 +60,6 @@ const Promotional = () => {
                   key={index}
                   product={product}
                   onClick={() => handleDetailsClick(product)}
-                 
                 />
               ))}
             </div>

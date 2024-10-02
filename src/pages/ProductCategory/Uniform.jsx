@@ -42,7 +42,7 @@ const Uniform = () => {
     console.log(product); 
     const ID = product._id;
     navigate(`/Details/${ID}`);
-  };
+  }; 
 
   console.log("data==>", data);
 
@@ -52,8 +52,10 @@ const Uniform = () => {
         <Row>
           <Col xs={12}>
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
-              {data?.map((data, index) => (
-                <ProductCard key={index} product={data} 
+            {data?.map((product, index) => (
+                <ProductCard
+                  key={index}
+                  product={product}
                   onClick={() => handleDetailsClick(product)}
                 />
               ))}
