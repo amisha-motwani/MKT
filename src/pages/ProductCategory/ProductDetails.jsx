@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import BASE_URL from "../../API/Api";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Table from "react-bootstrap/Table";
 
 function ProductDetails() {
   const navigate = useNavigate();
@@ -97,7 +98,7 @@ function ProductDetails() {
   //   window.open(whatsappUrl, "_blank"); // Open WhatsApp chat in a new tab
   // };
   const handleWant = () => {
-    const message = `Hello, I'm interested in the following product:\n\nTitle: ${data?.title}\nDescription: ${data?.description}\nColour: <div className:"w-[30px] h-[30px]">${selectedColor}</div>\nSize: ${selectedSize}\nImage: ${BASE_URL}/${image}`;
+    const message = `Hello, I'm interested in the following product:\n\nTitle: ${data?.title}\nDescription: ${data?.description}\nColour: ${selectedColor}\nSize: ${selectedSize}\nImage: ${BASE_URL}/${image}\Product code: ${data.Product_code}`;
     const phoneNumber = "+919039333112"; // Replace with the phone number you want to send the message to
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
@@ -164,10 +165,9 @@ function ProductDetails() {
           </div>
 
           <h1 className="font-bold my-2 text-md">Size</h1>
-          <div className="w-[65px]">
+          <div className="w-[100%]">
             <Form.Select
-              style={{ width: "300px", padding:"10px" }}
-
+              style={{ width: "100%", height: "33px" }}
               aria-label="Select Size px-2 border-1"
               onChange={(e) => setSelectedSize(e.target.value)} // Update selected size
             >
@@ -180,30 +180,50 @@ function ProductDetails() {
             </Form.Select>
           </div>
 
-          <h1 className="font-bold my-2 text-md">Product details</h1>
-          <div className="flex gap-5 ">
-            <div>
-              <ul className="font-bold text-md">
-                <li>Material composition</li>
-                <li>Sleeve type</li>
-                <li>Printing area</li>
-                <li>Printig charges</li>
-                <li>Country of Origin</li>
-              </ul>
-            </div>
-            <div>
-              <ul className="text-md">
-                <li>{data?.fabric}</li>
-                <li>{data?.sleeves_type}</li>
-                <li>{data?.printing_area}</li>
-                <li>{data?.printing_charges}</li>
-                <li>India</li>
-              </ul>
-            </div>
+          <h1 className="font-bold my-2 lg:text-xl md:text-lg text-md">
+            Product details:
+          </h1>
+          <div className="border-2 w-full text-black">
+            <Table striped="columns">
+              {/* <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead> */}
+              <tbody>
+                <tr >
+                  <td className="px-2">Material composition</td>
+                  <td className="px-2">{data?.fabric ? data.fabric : "NA"}</td>
+                </tr>
+                <tr>
+                  <td className="px-2">Sleeve type</td>
+
+                  <td className="px-2">{data?.sleeves_type ? data.sleeves_type : "NA"}</td>
+                </tr>
+                <tr>
+                  <td className="px-2">Printing area</td>
+                  <td className="px-2">{data?.printing_area ? data.printing_area : "NA"}</td>
+                </tr>
+                <tr>
+                  <td className="px-2">Printig charges</td>
+                  <td className="px-2">
+                    {data?.printing_charges ? data.printing_charges : "NA"}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-2">Country of Origin</td>
+                  <td className="px-2">India</td>
+                </tr>
+              </tbody>
+            </Table>
           </div>
+         
           <div className="w-full flex justify-start gap-2 items-center">
             {/* <h1>Price:</h1> */}
-            <h1 className="text-black my-2 text-[18px]">{data?.price}/-</h1>
+            <h1 className="text-black my-2 text-[18px] ms-1">{data?.price}/-</h1>
           </div>
 
           <div className="w-full flex justify-center items-center">
