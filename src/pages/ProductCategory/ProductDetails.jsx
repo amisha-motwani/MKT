@@ -119,7 +119,7 @@ function ProductDetails() {
             </div>
           ))}
         </div>
-        <div className="Photo md:w-[50%] w-[100%] rounded-[10px]">
+        <div className="Photo md:w-[50%] w-[100%] rounded-[10px] ">
           {image && (
             <img
               src={`${BASE_URL}/${image}`}
