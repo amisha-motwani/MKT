@@ -4,7 +4,7 @@ import { React} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "react-vertical-timeline-component/style.min.css";
-
+import { ToastContainer } from 'react-toastify';
 import AppRoutes from './Routes.jsx';
 import './App.css';
 import "./CustomizedCSS/CustomisedCSS.scss";
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer />
       <AppRoutes/>
     </>
   )

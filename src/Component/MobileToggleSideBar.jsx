@@ -54,7 +54,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                 className="py-1 px-1 flex justify-between"
                 style={{ borderBottom: "0.1px solid #7d8085" }}
               >
-                <NavLink to="/" onClick={handleCloseSidebar} className="hover:bg-slate-700">
+                <NavLink to="/" className="hover:bg-slate-700">
                   <b>PRODUCT CATEGORY</b>
                 </NavLink>
                 <IoIosArrowDown />
@@ -91,7 +91,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                       <b>ACCESSORIES</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/DesignYourOwn" onClick={handleDesignCloseSidebar}>
+                  <NavLink to="/" onClick={handleDesignCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>DESIGN YOUR OWN</b>
                     </div>
