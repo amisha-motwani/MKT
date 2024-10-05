@@ -168,7 +168,7 @@ function Careers() {
               We urge you to take the first step toward an amazing future if you
               would like to pursue a career with us. Your résumé should be sent
               to <span></span>
-              <span className="text-[#c72a5f]">resume@mktextiles.com</span>.
+              <span className="text-[#c72a5f]">mktextilesnagpur@gmail.com</span>.
               <span className="block my-2">
                 We are excited about the prospect of having you join our team!
               </span>

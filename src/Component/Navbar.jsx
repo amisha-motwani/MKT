@@ -8,6 +8,8 @@ import MKT_Logo from "../Images/Logo/MKT_Logo.png";
 import { LuMenuSquare } from "react-icons/lu";
 import { IoIosArrowDown } from "react-icons/io";
 import MobileToggleSideBar from "./MobileToggleSideBar";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Navbar({ children }) {
   const [isProduct, setIsProduct] = useState(false);
@@ -151,7 +153,7 @@ export default function Navbar({ children }) {
                     <b>ACCESSORIES</b>
                   </div>
                 </NavLink>
-                <NavLink to="/DesignYourOwn">
+                <NavLink to="/" onClick={() => toast.error("Coming soon... We're crafting something amazing here. Stay tuned!")}>
                   <div className="text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]">
                     <b>DESIGN YOUR OWN</b>
                   </div>

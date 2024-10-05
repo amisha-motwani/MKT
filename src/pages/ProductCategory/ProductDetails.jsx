@@ -86,7 +86,7 @@ function ProductDetails() {
   console.log("Images-->", images);
   console.log("image-->", images[0]);
 
-  // ------Whatsapp code ---------
+  // -----------Whatsapp code ---------
 
   const handleWant = () => {
     const message = `Hello, I'm interested in the following product:\n\nTitle: ${data?.title}\nDescription: ${data?.description}\n\nColour: ${selectedColor}\n\nSize: ${selectedSize}\nImage: ${BASE_URL}/${image}\n\nProduct code: ${data.Product_code}`;
@@ -111,7 +111,7 @@ function ProductDetails() {
               className="w-[90px] h-[90px] border-1 border-gray-300 my-2 rounded-lg mx-auto"
             >
               <img
-                src={`${BASE_URL}/${img}`} // Ensure image path is correct
+                src={`${img}`} // Ensure image path is correct
                 className="w-full h-full mx-auto rounded-lg cursor-pointer"
                 alt={`Product image ${index + 1}`}
                 onClick={() => setImage(img)}
@@ -122,7 +122,7 @@ function ProductDetails() {
         <div className="Photo md:w-[50%] w-[100%] rounded-[10px] ">
           {image && (
             <img
-              src={`${BASE_URL}/${image}`}
+              src={`${image}`}
               alt="Product Image"
               className=" md:w-[500px] md:h-[550px] sm:w-[400px] sm:h-[450px] w-[300px] h-[350px] rounded-[10px] mx-auto"
             />

@@ -38,8 +38,8 @@ function ContactUs() {
           <MdEmail  className="text-4xl text-[#e8653f]"/>
           </div>
           <h1 c className="text-center"><b>Email Adress</b></h1>
-        <p className="text-center my-2">er.amishamotwani@gmail.com</p>
-        <p className="text-center my-2">amishamotwani143@gmail.com</p>
+        <p className="text-center my-2">mktextilesnagpur@gmail.com</p>
+      
 
         </div>
        </div>

@@ -11,7 +11,7 @@ function ProductCard({ product, onClick }) {
         <div className="w-[100%] rounded-lg">
           <img
             className="w-[100%] md:h-[280px] sm:h-[200px] h-[160px] ProductCard_image"
-            src={`${BASE_URL}/${product.image.split(", ")[0]}`}
+            src={`${product.image.split(", ")[0]}`}
             alt={product.image}
           />
         </div>

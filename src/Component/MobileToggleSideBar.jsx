@@ -4,12 +4,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
   const [isMobileProduct, setIsMobileProduct] = useState(false);
 
   const handleCloseSidebar = () => {
     setIsSideBarVisible(false); // Correctly closes the sidebar
+  };
+  const handleDesignCloseSidebar = () => {
+    setIsSideBarVisible(false); // Closes the sidebar
+    toast.error("Coming soon... We're crafting something amazing here. Stay tuned!"); // Display the error toast
   };
 
   return (
@@ -85,7 +91,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                       <b>ACCESSORIES</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/DesignYourOwn" onClick={handleCloseSidebar}>
+                  <NavLink to="/DesignYourOwn" onClick={handleDesignCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>DESIGN YOUR OWN</b>
                     </div>
