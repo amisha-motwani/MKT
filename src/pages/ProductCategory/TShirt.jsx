@@ -1,12 +1,12 @@
 import { React, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ProductCard from "../../Component/ProductCard";
 import BASE_URL from "../../API/Api";
+import { useNavigate } from "react-router-dom";
 
-const Corporate = () => {
-  const navigate = useNavigate();
+function TShirt() {
   const [data, setData] = useState(null);
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -19,7 +19,7 @@ const Corporate = () => {
         };
 
         const response = await fetch(
-          `${BASE_URL}/api/notes/fetchallSearched/Product?category=Corporatewear`,
+          `${BASE_URL}/api/notes/fetchallSearched/Product?category=TShirt`,
           {
             method: "GET",
             headers: headers,
@@ -68,6 +68,6 @@ const Corporate = () => {
       </Container>
     </>
   );
-};
+}
 
-export default Corporate;
+export default TShirt;

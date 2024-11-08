@@ -68,4 +68,9 @@
   .dropdown-content a:hover {
     background-color: #d35400;
   }
+  .active-link {
+    background-color: pink;
+    color: black !important; /* Dark color for active link */
+    font-weight: bold; /* Optional: make it bold */
+  }
   

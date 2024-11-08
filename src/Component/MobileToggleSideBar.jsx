@@ -15,7 +15,9 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
   };
   const handleDesignCloseSidebar = () => {
     setIsSideBarVisible(false); // Closes the sidebar
-    toast.error("Coming soon... We're crafting something amazing here. Stay tuned!"); // Display the error toast
+    toast.error(
+      "Coming soon... We're crafting something amazing here. Stay tuned!"
+    ); // Display the error toast
   };
 
   return (
@@ -25,10 +27,13 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
         id="canvasSearch"
         aria-modal="true"
         role="dialog"
-        style={{ width: "70%", background:"#222222" }} 
+        style={{ width: "70%", background: "#222222" }}
       >
         <div className="canvas-wrapper text-white">
-          <header className=" bg-[#404243] py-1" style={{ marginTop: "910px !important" }}>
+          <header
+            className=" bg-[#404243] py-1"
+            style={{ marginTop: "910px !important" }}
+          >
             <div className="flex w-[100%] mx-auto justify-between my-1 px-1 ">
               <span>Menu</span>
               <div className="close my-1" onClick={handleCloseSidebar}>
@@ -42,13 +47,14 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
               style={{ listStyle: "none" }}
             >
               <li
-                className="py-1 px-1"
-                style={{ borderBottom: "0.01px solid #7d8085" }}
+                className="py-1 px-1 hover:bg-slate-700"
+                style={{ borderBottom: "0.1px solid #7d8085" }}
               >
-                <NavLink to="/Pioneers" onClick={handleCloseSidebar} className="hover:bg-slate-700">
-                  <b>PIONEERS</b>
+                <NavLink to="/" onClick={handleCloseSidebar}>
+                  <b>ABOUT US</b>
                 </NavLink>
               </li>
+
               <li
                 onClick={() => setIsMobileProduct(!isMobileProduct)}
                 className="py-1 px-1 flex justify-between"
@@ -61,12 +67,20 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
               </li>
               {isMobileProduct && (
                 <div className="d-block justify-between w-[100%] px-2 mx-auto">
-                  <NavLink to="/" onClick={handleCloseSidebar} className="hover:bg-slate-700">
+                  <NavLink
+                    to="/TShirt"
+                    onClick={handleCloseSidebar}
+                    className="hover:bg-slate-700"
+                  >
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1">
-                      <b>SHIRTS</b>
+                      <b>T-SHIRTS</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Sports" onClick={handleCloseSidebar} className="hover:bg-slate-700">
+                  <NavLink
+                    to="/Sports"
+                    onClick={handleCloseSidebar}
+                    className="hover:bg-slate-700"
+                  >
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>SPORTS</b>
                     </div>
@@ -91,6 +105,11 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                       <b>ACCESSORIES</b>
                     </div>
                   </NavLink>
+                  <NavLink to="/Eventwear" onClick={handleCloseSidebar}>
+                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
+                      <b>EVENTWEAR</b>
+                    </div>
+                  </NavLink>
                   <NavLink to="/" onClick={handleDesignCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>DESIGN YOUR OWN</b>
@@ -102,7 +121,11 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                 className="py-1 px-1"
                 style={{ borderBottom: "0.1px solid #7d8085" }}
               >
-                <NavLink to="/BeyondBusiness" onClick={handleCloseSidebar} className="hover:bg-slate-700">
+                <NavLink
+                  to="/BeyondBusiness"
+                  onClick={handleCloseSidebar}
+                  className="hover:bg-slate-700"
+                >
                   <b>BEYOND BUSINESS</b>
                 </NavLink>
               </li>
@@ -115,13 +138,18 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                 </NavLink>
               </li>
               <li
-                className="py-1 px-1 hover:bg-slate-700"
-                style={{ borderBottom: "0.1px solid #7d8085" }}
+                className="py-1 px-1"
+                style={{ borderBottom: "0.01px solid #7d8085" }}
               >
-                <NavLink to="/AboutUs" onClick={handleCloseSidebar}>
-                  <b>ABOUT US</b>
+                <NavLink
+                  to="/Pioneers"
+                  onClick={handleCloseSidebar}
+                  className="hover:bg-slate-700"
+                >
+                  <b>PIONEERS</b>
                 </NavLink>
               </li>
+
               <li
                 className="py-1 px-1 hover:bg-slate-700"
                 style={{ borderBottom: "0.1px solid #7d8085" }}

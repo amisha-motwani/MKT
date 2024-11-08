@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import AkashChawla from "../Images/AkashChawla.png";
 import SoniyaChawla from "../Images/SoniyaChawla.png";
 
@@ -28,7 +28,11 @@ function Pioneers() {
       <div className="md:flex block justify-between md:w-[94%] w-[85%] mx-auto">
         <div className="md:w-[45%] w-[100%] rounded-lg border-1 shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
           <div className="w-full mx-auto mb-3 flex justify-center items-center">
-            <img src={SoniyaChawla} alt="" className="w-[210px] h-[320px] mx-auto" />
+            <img
+              src={SoniyaChawla}
+              alt=""
+              className="w-[210px] h-[320px] mx-auto"
+            />
           </div>
           <h1 className="text-center">
             <b>Soniya C Motwani </b>
@@ -44,7 +48,11 @@ function Pioneers() {
         </div>
         <div className="md:w-[45%] w-[100%] border-1 rounded-lg shadow-2xl mx-auto bg-[#f7f7f7] h-[fit-content] mt-5 mb-3 text-black py-4">
           <div className="w-full mx-auto mb-3 flex justify-center items-center">
-            <img src={AkashChawla} alt="" className="w-[210px] h-[300px] mx-auto"/>
+            <img
+              src={AkashChawla}
+              alt=""
+              className="w-[210px] h-[300px] mx-auto"
+            />
           </div>
           <h1 className="text-center">
             <b>Akash K Chawla</b>
@@ -54,13 +62,14 @@ function Pioneers() {
             specializing in customized garment manufacturing. He earned his MBA
             in Sales and Marketing from G. H. Raisoni College in Nagpur and has
             over eight years of valuable experience in the garment industry. His
-            expertise and strategic vision in our company as a leader in the industry.
+            expertise and strategic vision in our company will guide as a leader
+            in the industry.
           </p>
         </div>
       </div>
       <div className=" w-[94%] border-1 shadow-2xl mx-auto bg-white h-[fit-content] mt-5 mb-3 text-black py-4">
-        <h1 className="text-xl mb-3 text-[#e8653f] text-center">
-          <b className="">Our Vission</b>
+        <h1 className="my-4 text-xl text-[#e8653f] text-center">
+          <b className="mb-">PIONEERS VIEW POINT</b>
         </h1>
         <p className="text-justify px-3">
           <span className="block mb-2">
@@ -78,34 +87,34 @@ function Pioneers() {
             organization.
           </span>
           <span className="block mb-2 mt-4">
-            <h2 className="md:text-xl text-lg text-[#c72a5f]"><b>Our Commitment:</b></h2>
-            <ul className="mt-2">
+            <h2 className="md:text-xl text-lg text-[#c72a5f]">
+              <b>Our Commitment:</b>
+            </h2>
+            <ul>
               <li className="my-1">
-                <strong>Equal Opportunities:</strong> We strive to provide equal
-                opportunities for women in hiring, promotions, and professional
-                development. Our recruitment processes are designed to eliminate
-                bias and ensure a fair evaluation of all candidates.
+                <strong>Quality Excellence:</strong> We ensure that every product
+                is crafted with the finest materials, including high-quality
+                threads and meticulous finishing. Our commitment to quality
+                guarantees durability and a polished appearance for each piece.
               </li>
               <li className="my-1">
-                <strong>Supportive Environment:</strong> We aim to create a
-                supportive workplace culture where women feel valued, respected,
-                and empowered to share their ideas and perspectives. We
-                encourage open dialogue and provide resources to address any
-                challenges they may face.
+                <strong>Adaptive to Trends:</strong> We stay ahead of the curve by closely monitoring fashion trends and consumer preferences. Our design team continually refreshes our collections, ensuring that our offerings are modern, relevant, and tailored to the needs of our clients.
               </li>
               <li className="my-1">
-                <strong>Leadership Development:</strong> We are dedicated to
-                nurturing female talent and promoting women into leadership
-                roles. Our mentorship programs and training initiatives are
-                designed to equip women with the skills and confidence needed to
-                excel.
+                <strong>Equal Opportunities:</strong> We are committed to
+                providing positive change in society by offering equal
+                employment opportunities to women and empowering them, as it is
+                fundamental to our belief in looking{" "}
+                <span
+                  className="text-[#e8653f] cursor-pointer"
+                  onClick={() => (window.location.href = "/BeyondBusiness")}
+                >
+                  <b>Beyond business</b>
+                </span>
+                .
               </li>
               <li className="my-1">
-                <strong>Community Engagement:</strong> We actively participate
-                in initiatives that promote women's empowerment beyond our
-                organization and committed to collaborate with local and global
-                organizations to advance gender equality. We believe that when
-                women thrive, everyone benefits.
+                <strong>Customer-Centric Approach:</strong> We prioritize our client's feedback and preferences, adapting our production processes to meet their unique needs and deliver personalized experiences.
               </li>
             </ul>
             <p className="my-2">
@@ -115,9 +124,10 @@ function Pioneers() {
               fullest potential.
             </p>
             <p className="my-1">
-              <b>Soniya C Motwani
-              <br />
-              (Founder MK Textiles)
+              <b>
+                Soniya C Motwani
+                <br />
+                (Founder MK Textiles)
               </b>
             </p>
           </span>

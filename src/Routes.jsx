@@ -16,7 +16,8 @@ import AboutUs from "./pages/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Pioneers from "./pages/Pioneers.jsx";
 import Careers from "./pages/Careers.jsx";
-import Shirt from "./pages/ProductCategory/Shirt.jsx";
+import TShirt from "./pages/ProductCategory/TShirt.jsx";
+import Eventwear from "./pages/ProductCategory/Eventwear.jsx";
 import BeyondBusiness from "./pages/BeyondBusiness.jsx";
 import Promotional from "./pages/ProductCategory/Promotional.jsx";
 
@@ -29,7 +30,7 @@ const AppRoutes = () => {
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/DesignYourOwn" element={<DesignYourOwn />} />
-            <Route path="/" element={<Shirt />} />
+            <Route path="/TShirt" element={<TShirt />} />
             <Route path="/Teamwear" element={<Teamwear />} />
             <Route path="/Sports" element={<Sports />} />
             <Route path="/Corporate" element={<Corporate />} />
@@ -38,11 +39,13 @@ const AppRoutes = () => {
             <Route path="/Promotional" element={<Promotional/>}   />
             <Route path="/Accessories" element={<Accessories />} />
             <Route path="/Details/:id" element={<ProductDetails />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/" element={<AboutUs />} />
             <Route path="/ContactUs" element={<ContactUs />} />
             <Route path="/Pioneers" element={<Pioneers />} />
-            <Route path="/Careers" element={<Careers />} />
+            <Route path="/Careers" element={<Careers />} />Eventwear
             <Route path="/BeyondBusiness" element={<BeyondBusiness/>}  />
+            <Route path="/Eventwear" element={<Eventwear />}  />
+
 
           </Routes>
         </Navbar>

@@ -1,15 +1,14 @@
 import { React, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ProductCard from "../../Component/ProductCard";
 import BASE_URL from "../../API/Api";
-import { useNavigate } from "react-router-dom";
 
-function Shirt() {
+const Eventwear = () => {
   const [data, setData] = useState(null);
-  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +19,7 @@ function Shirt() {
         };
 
         const response = await fetch(
-          `${BASE_URL}/api/notes/fetchallSearched/Product?category=Shirt`,
+          `${BASE_URL}/api/notes/fetchallSearched/Product?category=Eventwear`,
           {
             method: "GET",
             headers: headers,
@@ -43,10 +42,10 @@ function Shirt() {
 
   const handleDetailsClick = (product) => {
     console.log("Details clicked");
-    console.log(product); 
+    console.log(product);
     const ID = product._id;
     navigate(`/Details/${ID}`);
-  }; 
+  };
 
   console.log("data==>", data);
 
@@ -56,7 +55,7 @@ function Shirt() {
         <Row>
           <Col xs={12}>
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
-              {data?.map((product, index) => (
+            {data?.map((product, index) => (
                 <ProductCard
                   key={index}
                   product={product}
@@ -69,6 +68,5 @@ function Shirt() {
       </Container>
     </>
   );
-}
-
-export default Shirt;
+};
+export default Eventwear;

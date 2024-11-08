@@ -36,6 +36,38 @@ function BeyondBusiness() {
             empowered atmosphere where women can achieve success and serve as
             role models for others.
           </span>
+          <span className=" block">
+          <ul className="mt-4">
+            
+            <li className="my-1">
+              <strong>Equal Opportunities:</strong> We strive to provide equal
+              opportunities for women in hiring, promotions, and professional
+              development. Our recruitment processes are designed to eliminate
+              bias and ensure a fair evaluation of all candidates.
+            </li>
+            <li className="my-1">
+              <strong>Supportive Environment:</strong> We aim to create a
+              supportive workplace culture where women feel valued, respected,
+              and empowered to share their ideas and perspectives. We
+              encourage open dialogue and provide resources to address any
+              challenges they may face.
+            </li>
+            <li className="my-1">
+              <strong>Leadership Development:</strong> We are dedicated to
+              nurturing female talent and promoting women into leadership
+              roles. Our mentorship programs and training initiatives are
+              designed to equip women with the skills and confidence needed to
+              excel.
+            </li>
+            <li className="my-1">
+              <strong>Community Engagement:</strong> We actively participate
+              in initiatives that promote women's empowerment beyond our
+              organization and committed to collaborate with local and global
+              organizations to advance gender equality. We believe that when
+              women thrive, everyone benefits.
+            </li>
+          </ul>
+          </span>
         </p>
       </div>
       <div className="w-full my-3">

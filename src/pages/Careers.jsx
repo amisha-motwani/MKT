@@ -1,7 +1,7 @@
 import React from "react";
 import Reliable from "../Images/Reliable.png";
 import Teamwork from "../Images/Teamwork.png";
-
+import { MdOutlineThumbUp } from "react-icons/md";
 import Innovation from "../Images/Innovation.png";
 import ResultsOriented from "../Images/ResultsOriented.png";
 import Adaptability from "../Images/Adaptability.png";
@@ -104,6 +104,13 @@ function Careers() {
             <b>OUR WORK VALUES</b>
           </h1>
           <div className="flex flex-wrap justify-evenly gap-1">
+           <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
+            {/* <img src={ResultsOriented} alt="" className="mx-auto" /> */}
+            <MdOutlineThumbUp className="mx-auto text-[#ba0101] text-[55px] my-2" />
+              <h1 className="text-center">
+                <b>Quality</b>
+              </h1>
+            </div>
             <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Reliable} alt="" className="mx-auto" />
               <h1 className="text-center my-2">
@@ -116,18 +123,18 @@ function Careers() {
                 <b>Innovation</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
+            {/* <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={ResultsOriented} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Results-oriented environment</b>
               </h1>
-            </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
+            </div> */}
+            {/* <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={ResultsOriented} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Results-oriented environment</b>
               </h1>
-            </div>
+            </div> */}
             <div className="w-[150px] h-[140px] shadow-lg p-4 bg-[white] rounded-lg my-3">
               <img src={Teamwork} alt="" className="mx-auto" />
               <h1 className="text-center">
@@ -140,12 +147,12 @@ function Careers() {
                 <b>Adaptability</b>
               </h1>
             </div>
-            <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
+            {/* <div className="w-[150px] h-[140px] shadow-lg p-3 bg-[white] rounded-lg my-3">
               <img src={Recognizing} alt="" className="mx-auto" />
               <h1 className="text-center">
                 <b>Recognizing and nurturing talent</b>
               </h1>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full md:flex block mt-5 mb-5">
