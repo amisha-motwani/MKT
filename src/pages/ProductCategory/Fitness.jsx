@@ -53,8 +53,8 @@ export default function Fitness() {
         <Row>
           <Col xs={12}>
             {isLoading ? (
-              <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-                <Spinner animation="border" role="status">
+              <div className="d-flex justify-content-center" style={{ height: "100vh" }}>
+                <Spinner animation="border" role="status" className="my-5">
                   <span className="visually-hidden">Loading...</span>
                 </Spinner>
               </div>

@@ -55,11 +55,11 @@ const Promotional = () => {
       <Row>
         <Col xs={12}>
           {isLoading ? (
-            <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-              </Spinner>
-            </div>
+            <div className="d-flex justify-content-center" style={{ height: "100vh" }}>
+                <Spinner animation="border" role="status" className="my-5">
+                  <span className="visually-hidden">Loading...</span>
+                </Spinner>
+              </div>
           ) : (
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
               {data?.map((product, index) => (
