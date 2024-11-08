@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import ProductCard from "../../Component/ProductCard";
 import BASE_URL from "../../API/Api";
 
@@ -48,11 +48,18 @@ const Uniform = () => {
 
   return (
     <>
-      <Container fluid>
-        <Row>
-          <Col xs={12}>
+    <Container fluid>
+      <Row>
+        <Col xs={12}>
+          {isLoading ? (
+            <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            </div>
+          ) : (
             <div className="flex flex-wrap justify-evenly gap-2 my-3">
-            {data?.map((product, index) => (
+              {data?.map((product, index) => (
                 <ProductCard
                   key={index}
                   product={product}
@@ -60,10 +67,12 @@ const Uniform = () => {
                 />
               ))}
             </div>
-          </Col>
-        </Row>
-      </Container>
-    </>
+          )}
+          {error && <p className="text-danger text-center">{error.message}</p>}
+        </Col>
+      </Row>
+    </Container>
+  </>
   );
 };
 export default Uniform;
