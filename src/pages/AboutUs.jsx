@@ -8,6 +8,10 @@ import {
 // import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
+import Fabric from "../Images/Fabric.png";
+import HappyCustomer from "../Images/HappyCustomer.png";
+import Latest from "../Images/Latest.png"
+import StitchingMachine from "../Images/StitchingMachine.png";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -27,7 +31,7 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div
-          className="flex justify-center items-center w-full h-full bg-[#e8653f] rounded-full border-none "
+          className="flex justify-center items-center w-full h-full bg-[#232323] rounded-full border-none "
           style={{ marginRight: "-100px" }}
         >
           <img
@@ -68,7 +72,7 @@ function AboutUs() {
   const experiences = [
     {
       title: "We use best fabric:",
-      icon: "Icon",
+      icon: Fabric,
       iconBg: "#383E56",
       date: "Sept 2024 - March 2024",
       points: [
@@ -100,7 +104,7 @@ function AboutUs() {
     // },
     {
       title: "We Focus on quality finishing and stitching",
-      icon: "Icon",
+      icon: StitchingMachine,
       iconBg: "#383E56",
       date: "Jan 2023 - April 2023",
       points: [
@@ -152,8 +156,8 @@ function AboutUs() {
 
     {
       title: "We are Adaptive/Updated to Modern Patterns:",
-      icon: "Icon",
-      iconBg: "#383E56",
+      icon: Latest,
+      iconBg: "#232323",
       date: "Oct 2022 - Dec 2022",
       points: [
         
@@ -202,8 +206,8 @@ function AboutUs() {
 
     {
       title: "We are commitment to Customer Satisfaction",
-      icon: "Icon",
-      iconBg: "#383E56",
+      icon: HappyCustomer,
+      iconBg: "#232323",
       date: "April 2019 - May 2019",
       points: [
         "Customer satisfaction is our top priority in everything we do.",
