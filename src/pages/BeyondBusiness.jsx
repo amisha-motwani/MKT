@@ -1,5 +1,5 @@
 import React from "react";
-import WomenWorking from "../Images/WomenWorking.png";
+import WomenEmployment from "../Images/WomenEmployment.jpg";
 
 function BeyondBusiness() {
   return (
@@ -71,7 +71,7 @@ function BeyondBusiness() {
         </p>
       </div>
       <div className="w-full my-3">
-        <img src={WomenWorking} className="w-full" />
+        <img src={WomenEmployment} className="w-full" />
       </div>
     </>
   );

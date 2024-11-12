@@ -1,6 +1,8 @@
 import React from "react";
 import { LiaHandPointRightSolid } from "react-icons/lia";
 import { FaHandPointRight } from "react-icons/fa";
+import AboutUsImg from "../Images/AboutUsImg.png";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -10,7 +12,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import Fabric from "../Images/Fabric.png";
 import HappyCustomer from "../Images/HappyCustomer.png";
-import Latest from "../Images/Latest.png"
+import Latest from "../Images/Latest.png";
 import StitchingMachine from "../Images/StitchingMachine.png";
 
 const ExperienceCard = ({ experience }) => {
@@ -83,7 +85,7 @@ function AboutUs() {
         // "Enjoy every moment in style and confidence with our commitment to quality.",
       ],
     },
-    
+
     // {
     //   title: "Best Cloth Material:",
     //   // company_name: "Mindcrew Technologies",
@@ -112,10 +114,9 @@ function AboutUs() {
         "We are focussed on producing timeless pieces that withstand changing fashion trends while maintaining quality.",
         "Our every product undergoes thorough inspection by skilled artisans.",
         "We ensure that each product has a polished appearance for any occasion.",
-       
       ],
     },
-    
+
     // {
     //   title: "Focus on Finishing and Stitching",
     //   // company_name: "Tech Forest",
@@ -160,7 +161,6 @@ function AboutUs() {
       iconBg: "#232323",
       date: "Oct 2022 - Dec 2022",
       points: [
-        
         "Design team researches and embraces current fashion trends.",
         "Regularly refreshing collections to ensure relevance and variety.",
         "Focus on sustainable practices while implementing new designs.",
@@ -168,7 +168,7 @@ function AboutUs() {
         "Availability of customizable options for a personalized touch.",
       ],
     },
-    
+
     // {
     //   title: "All Colors Available",
     //   // company_name: "Robotronix",
@@ -218,7 +218,6 @@ function AboutUs() {
       ],
     },
 
-    
     // {
     //   title: "Customer Satisfaction",
     //   // company_name: "Robotronix",
@@ -277,6 +276,21 @@ function AboutUs() {
           <b>ABOUT MK TEXTITLES</b>
         </h1>
       </div>
+      <div className="w-full my-3 relative">
+        <img src={AboutUsImg} className="w-full" alt="About Us" />
+        <h1 className="absolute top-[10%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-bold">
+          <span
+            className="rounded-md px-1 py-1"
+            style={{
+              backgroundColor: "rgba(245, 245, 245, 0.2)", 
+              color: "black", 
+            }}
+          >
+            Welcome to MK Textiles
+          </span>
+        </h1>
+      </div>
+
       <div className="w-[94%] mx-auto">
         <p>
           <span className="text-justify my-2 block">
@@ -324,8 +338,8 @@ function AboutUs() {
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo" />
           <p className="ms-2">
-           <b> Customer satisfaction:</b> We work hard
-            consistently to go beyond the customer's expectations.
+            <b> Customer satisfaction:</b> We work hard consistently to go
+            beyond the customer's expectations.
           </p>
         </div>
         <div className="w-full py-2 flex">
@@ -340,26 +354,27 @@ function AboutUs() {
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo" />
           <p className="ms-2">
-            <b>Efficiency Focus: </b>The main objective of our approach is to support
-            our customers' growth by minimizing input costs and maximizing
-            output.
+            <b>Efficiency Focus: </b>The main objective of our approach is to
+            support our customers' growth by minimizing input costs and
+            maximizing output.
           </p>
         </div>
 
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo " />
           <p className="ms-2">
-            <b>Tailored Approach:</b> Whether working with clients or internally, we
-            think that every project should be managed with a tailored approach.
+            <b>Tailored Approach:</b> Whether working with clients or
+            internally, we think that every project should be managed with a
+            tailored approach.
           </p>
         </div>
 
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo" />
           <p className="ms-2">
-            <b>Employee Well-Being:</b> By treating our workers as complete beings and
-            attending to their physical, mental, emotional, and spiritual
-            requirements, we improve their performance.
+            <b>Employee Well-Being:</b> By treating our workers as complete
+            beings and attending to their physical, mental, emotional, and
+            spiritual requirements, we improve their performance.
           </p>
         </div>
 
@@ -369,8 +384,8 @@ function AboutUs() {
             style={{ textSize: "40px" }}
           />
           <p className="ms-2">
-            <b>Comfort of the Client:</b> Throughout their journey with us, we make
-            sure that our clients feel safe and supported. We do this by
+            <b>Comfort of the Client:</b> Throughout their journey with us, we
+            make sure that our clients feel safe and supported. We do this by
             offering committed support and open communication to foster trust
             and enduring partnerships.
           </p>
@@ -378,9 +393,9 @@ function AboutUs() {
         <div className="w-full py-2 flex">
           <FaHandPointRight className="MissionHandLogo" />
           <p className="ms-2">
-            <b>Beyond Business:</b> At MK Textiles, we are committed to supporting
-            women empowerment by creating opportunities for women in the textile
-            industry, fostering their growth and independence.
+            <b>Beyond Business:</b> At MK Textiles, we are committed to
+            supporting women empowerment by creating opportunities for women in
+            the textile industry, fostering their growth and independence.
           </p>
         </div>
 
