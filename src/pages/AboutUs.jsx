@@ -278,7 +278,7 @@ function AboutUs() {
       </div>
       <div className="w-full my-3 relative">
         <img src={AboutUsImg} className="w-full" alt="About Us" />
-        <h1 className="absolute lg:top-[10%] top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:text-3xl md:text-2xl text-lg font-bold">
+        <h1 className="absolute lg:top-[10%] top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:text-3xl md:text-2xl text-lg font-bold">
           <span
             className="rounded-md px-1 py-1 w-full"
             style={{
