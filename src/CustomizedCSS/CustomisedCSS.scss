@@ -41,14 +41,15 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-30%); /* Moves up to half the content for a seamless loop */
+    transform: translateY(
+      -30%
+    ); /* Moves up to half the content for a seamless loop */
   }
 }
 
 .animate-scroll {
   animation: scroll 60s linear infinite; /* Slowed to 60 seconds */
 }
-
 
 // ---- Media query ----
 /* Default size for smaller screens (below 400px) */
@@ -61,8 +62,8 @@
 
 /* Default size for screens above 400px (default) */
 .image-container {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin: 0.5rem;
 }
 
@@ -73,10 +74,10 @@
 }
 
 /* For medium screens (>= 640px) */
-@media (min-width: 640px) {
+@media (min-width: 840px) {
   .image-container {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -87,9 +88,6 @@
     height: 200px;
   }
 }
-
-
-
 
 .MissionHandLogo {
   font-size: 25px !important;
@@ -110,12 +108,12 @@
   }
 }
 @media (max-width: 1024px) {
-  .vertical-timeline-element-content{
+  .vertical-timeline-element-content {
     margin-top: 30px !important;
   }
 }
 // ================== Product Card ====================
-.ProductCard_image{
+.ProductCard_image {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
