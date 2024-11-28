@@ -312,7 +312,7 @@ function AboutUs() {
   return (
     <>
       <div className="flex w-full">
-        <div className="md:w-[80%] w-[70%]">
+        <div className="md:w-[80%] w-[75%]">
           <div className="w-[94%] mx-auto">
             <h1 className="text-2xl mt-2 text-[#e8653f] text-center">
               <b>ABOUT MK TEXTITLES</b>
@@ -465,7 +465,7 @@ function AboutUs() {
             </VerticalTimeline>
           </div>
         </div>
-        <div className="md:w-[20%] w-[30%] overflow-hidden h-[100%] flex justify-center">
+        <div className="md:w-[20%] w-[25%] overflow-hidden h-[100%] flex justify-center">
           <div className="animate-scroll flex flex-col">
             {/* Duplicate images for smooth infinite scrolling */}
             {images.map((img, index) => (
