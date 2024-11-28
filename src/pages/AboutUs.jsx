@@ -2,7 +2,26 @@ import React from "react";
 import { LiaHandPointRightSolid } from "react-icons/lia";
 import { FaHandPointRight } from "react-icons/fa";
 import AboutUsImg from "../Images/AboutUsImg.png";
+import Bottom1 from "../Images/AdProducts/Bottom1.jpg";
+import GymHoodie from "../Images/AdProducts/GymHoodie.jpg";
+import Hoodie1 from "../Images/AdProducts/Hoodie1.jpg";
+import Hoodie2 from "../Images/AdProducts/Hoodie2.jpg";
+import Hoodie3 from "../Images/AdProducts/Hoodie3.jpg";
+import Hoodie4 from "../Images/AdProducts/Hoodie4.jpg";
+import jacket1 from "../Images/AdProducts/jacket1.jpg";
+import Joggers1 from "../Images/AdProducts/Joggers1.jpg";
+import Polo1 from "../Images/AdProducts/Polo1.jpg";
+import Polo2 from "../Images/AdProducts/Polo2.jpg";
+import RoundFull1 from "../Images/AdProducts/RoundFull1.jpg";
+import Shorts1 from "../Images/AdProducts/Shorts1.jpg";
+import shorts2 from "../Images/AdProducts/shorts2.jpg";
+import Sweatshirt1 from "../Images/AdProducts/Sweatshirt1.jpg";
+import Sweatshirt2 from "../Images/AdProducts/Sweatshirt2.jpg";
+import Sweatshirt3 from "../Images/AdProducts/Sweatshirt3.jpg";
+import vest1 from "../Images/AdProducts/vest1.jpg";
+import vest2 from "../Images/AdProducts/vest2.jpg";
 
+// import {Bottom1} from "../Images/AdProducts/Bottom1.jpg"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -71,6 +90,27 @@ const ExperienceCard = ({ experience }) => {
 };
 
 function AboutUs() {
+  const images = [
+    Sweatshirt2,
+    Hoodie2,
+    GymHoodie,
+    Hoodie3,
+    vest1,
+    Bottom1,
+    Hoodie4,
+    jacket1,
+    Sweatshirt3,
+    Joggers1,
+    Polo1,
+    Hoodie1,
+    RoundFull1,
+    Shorts1,
+    shorts2,
+    Sweatshirt1,
+    Polo2,
+    vest2,
+  ];
+
   const experiences = [
     {
       title: "We use best fabric:",
@@ -271,148 +311,189 @@ function AboutUs() {
 
   return (
     <>
-      <div className="w-[94%] mx-auto">
-        <h1 className="text-2xl mt-2 text-[#e8653f] text-center">
-          <b>ABOUT MK TEXTITLES</b>
-        </h1>
-      </div>
-      <div className="w-full my-3 relative">
-        <img src={AboutUsImg} className="w-full" alt="About Us" />
-        <h1 className="absolute lg:top-[10%] top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:text-3xl md:text-2xl text-md font-bold text-black rounded-md px-1 py-1"
-        style={{ backgroundColor: "rgba(245, 245, 245, 0.2)", width:"fit-content"}}>
-          Welcome to MK Textiles
-        </h1>
-      </div>
+      <div className="flex w-full">
+        <div className="w-[80%]">
+          <div className="w-[94%] mx-auto">
+            <h1 className="text-2xl mt-2 text-[#e8653f] text-center">
+              <b>ABOUT MK TEXTITLES</b>
+            </h1>
+          </div>
+          <div className="w-full my-3 relative">
+            <img src={AboutUsImg} className="w-full" alt="About Us" />
+            <h1
+              className="absolute lg:top-[10%] top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:text-3xl md:text-2xl text-md font-bold text-black rounded-md px-1 py-1"
+              style={{
+                backgroundColor: "rgba(245, 245, 245, 0.2)",
+                width: "fit-content",
+              }}
+            >
+              Welcome to MK Textiles
+            </h1>
+          </div>
 
-      <div className="w-[94%] mx-auto">
-        <p>
-          <span className="text-justify my-2 block">
-            Our goal at MK Textiles is to customize the premium textile
-            solutions to different sectors. We deliver products that not only
-            meet but also surpass our client's expectations because we are
-            dedicated to excellence.
-          </span>
-          <span className="text-justify my-2 block">
-            Our areas of expertise include Customized T-shirts, Sportswear,
-            Teamwear, Corporate attire, School uniforms, and Accessories. Every
-            category is expertly designed, guaranteeing that every article of
-            clothing is both fashionable and functional. With the newest
-            technology and highly talented craftspeople, our modern factory
-            enables us to maintain the highest levels of quality in our
-            production processes.
-          </span>
-          <span className="text-justify my-2 block">
-            Apart from our regular products, we also specialize in making
-            clothes that are specially customized to each customer's needs. We
-            are able to produce clothes that accurately represent your brand and
-            ideas thanks to this customized approach.
-          </span>
-          <span className="text-justify my-2 block">
-            At MK Textiles, we think style and utility go hand in hand. Our wide
-            selection of goods is made to offer outstanding value, guaranteeing
-            our customers' total satisfaction.
-            {/* By offering the best in textile
+          <div className="w-[94%] mx-auto">
+            <p>
+              <span className="text-justify my-2 block">
+                Our goal at MK Textiles is to customize the premium textile
+                solutions to different sectors. We deliver products that not
+                only meet but also surpass our client's expectations because we
+                are dedicated to excellence.
+              </span>
+              <span className="text-justify my-2 block">
+                Our areas of expertise include Customized T-shirts, Sportswear,
+                Teamwear, Corporate attire, School uniforms, and Accessories.
+                Every category is expertly designed, guaranteeing that every
+                article of clothing is both fashionable and functional. With the
+                newest technology and highly talented craftspeople, our modern
+                factory enables us to maintain the highest levels of quality in
+                our production processes.
+              </span>
+              <span className="text-justify my-2 block">
+                Apart from our regular products, we also specialize in making
+                clothes that are specially customized to each customer's needs.
+                We are able to produce clothes that accurately represent your
+                brand and ideas thanks to this customized approach.
+              </span>
+              <span className="text-justify my-2 block">
+                At MK Textiles, we think style and utility go hand in hand. Our
+                wide selection of goods is made to offer outstanding value,
+                guaranteeing our customers' total satisfaction.
+                {/* By offering the best in textile
             innovation and design and developing enduring connections based on
             quality and trust, we are dedicated to assisting you in succeeding. */}
-          </span>
-          <span className="text-justify my-2 block">
-            Allow us to work with you to develop exceptional textile solutions
-            that will make a lasting impression on the market. With our capacity
-            for manufacturing and commitment to quality, we guarantee that every
-            project is carried out with care and accuracy.
-          </span>
-          <span className="text-justify my-2 block"></span>
-        </p>
-      </div>
-      <div className="w-[94%] mx-auto">
-        <h1 className="text-2xl my-4 text-[#e8653f] text-center">
-          <b className="my-0">Our Vision</b>
-        </h1>
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b> Customer satisfaction:</b> We work hard consistently to go
-            beyond the customer's expectations.
-          </p>
-        </div>
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b>Customized Solutions:</b> We specialize in creating personalized
-            T-shirts tailored to our clients’ unique needs, ensuring that each
-            design reflects their identity according to clients’ choice.
-          </p>
-        </div>
+              </span>
+              <span className="text-justify my-2 block">
+                Allow us to work with you to develop exceptional textile
+                solutions that will make a lasting impression on the market.
+                With our capacity for manufacturing and commitment to quality,
+                we guarantee that every project is carried out with care and
+                accuracy.
+              </span>
+              <span className="text-justify my-2 block"></span>
+            </p>
+          </div>
+          <div className="w-[94%] mx-auto">
+            <h1 className="text-2xl my-4 text-[#e8653f] text-center">
+              <b className="my-0">Our Vision</b>
+            </h1>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b> Customer satisfaction:</b> We work hard consistently to go
+                beyond the customer's expectations.
+              </p>
+            </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b>Customized Solutions:</b> We specialize in creating
+                personalized T-shirts tailored to our clients’ unique needs,
+                ensuring that each design reflects their identity according to
+                clients’ choice.
+              </p>
+            </div>
 
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b>Efficiency Focus: </b>The main objective of our approach is to
-            support our customers' growth by minimizing input costs and
-            maximizing output.
-          </p>
-        </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b>Efficiency Focus: </b>The main objective of our approach is
+                to support our customers' growth by minimizing input costs and
+                maximizing output.
+              </p>
+            </div>
 
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo " />
-          <p className="ms-2">
-            <b>Tailored Approach:</b> Whether working with clients or
-            internally, we think that every project should be managed with a
-            tailored approach.
-          </p>
-        </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo " />
+              <p className="ms-2">
+                <b>Tailored Approach:</b> Whether working with clients or
+                internally, we think that every project should be managed with a
+                tailored approach.
+              </p>
+            </div>
 
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b>Employee Well-Being:</b> By treating our workers as complete
-            beings and attending to their physical, mental, emotional, and
-            spiritual requirements, we improve their performance.
-          </p>
-        </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b>Employee Well-Being:</b> By treating our workers as complete
+                beings and attending to their physical, mental, emotional, and
+                spiritual requirements, we improve their performance.
+              </p>
+            </div>
 
-        <div className="w-full py-2 flex">
-          <FaHandPointRight
-            className="MissionHandLogo"
-            style={{ textSize: "40px" }}
-          />
-          <p className="ms-2">
-            <b>Comfort of the Client:</b> Throughout their journey with us, we
-            make sure that our clients feel safe and supported. We do this by
-            offering committed support and open communication to foster trust
-            and enduring partnerships.
-          </p>
-        </div>
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b>Beyond Business:</b> At MK Textiles, we are committed to
-            supporting women empowerment by creating opportunities for women in
-            the textile industry, fostering their growth and independence.
-          </p>
-        </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight
+                className="MissionHandLogo"
+                style={{ textSize: "40px" }}
+              />
+              <p className="ms-2">
+                <b>Comfort of the Client:</b> Throughout their journey with us,
+                we make sure that our clients feel safe and supported. We do
+                this by offering committed support and open communication to
+                foster trust and enduring partnerships.
+              </p>
+            </div>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b>Beyond Business:</b> At MK Textiles, we are committed to
+                supporting women empowerment by creating opportunities for women
+                in the textile industry, fostering their growth and
+                independence.
+              </p>
+            </div>
 
-        <div className="w-full py-2 flex">
-          <FaHandPointRight className="MissionHandLogo" />
-          <p className="ms-2">
-            <b>Global Expansion:</b> Our goal is to increase our presence in the
-            textile sector to unprecedented levels by growing rapidly on a
-            global basis.
-          </p>
+            <div className="w-full py-2 flex">
+              <FaHandPointRight className="MissionHandLogo" />
+              <p className="ms-2">
+                <b>Global Expansion:</b> Our goal is to increase our presence in
+                the textile sector to unprecedented levels by growing rapidly on
+                a global basis.
+              </p>
+            </div>
+          </div>
+          <h1 className="text-2xl my-4 text-[#e8653f] text-center">
+            <b className="mb-">Why MK Textiles?</b>
+          </h1>
+          <div className="my-5 w-[90%] mx-auto ">
+            <VerticalTimeline>
+              {experiences.map((experience, index) => (
+                <ExperienceCard
+                  key={`experience-${index}`}
+                  experience={experience}
+                />
+              ))}
+            </VerticalTimeline>
+          </div>
         </div>
-      </div>
-      <h1 className="text-2xl my-4 text-[#e8653f] text-center">
-        <b className="mb-">Why MK Textiles?</b>
-      </h1>
-      <div className="my-5 w-[90%] mx-auto ">
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
-        </VerticalTimeline>
+        <div className="w-[20%] overflow-hidden h-[100%] flex justify-center">
+          <div className="animate-scroll flex flex-col ">
+            {images.map((img, index) => (
+              <div
+                key={index}
+                className="border border-gray-400 rounded-md w-[200px] h-[200px] my-2"
+              >
+                <img
+                  src={img}
+                  alt={`Image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+            {/* Duplicate images for smooth infinite scrolling */}
+            {images.map((img, index) => (
+              <div
+                key={`duplicate-${index}`}
+                className="border border-gray-400 rounded-md w-[200px] h-[200px] my-2"
+              >
+                <img
+                  src={img}
+                  alt={`Image duplicate ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

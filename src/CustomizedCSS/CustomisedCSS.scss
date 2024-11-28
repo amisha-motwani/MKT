@@ -34,6 +34,23 @@
   }
 }
 // ========================= ABOUT US ==================================
+
+// infinite vertical scrolling animation
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30%); /* Moves up to half the content for a seamless loop */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite; /* Slowed to 60 seconds */
+}
+
+
+
 .MissionHandLogo {
   font-size: 25px !important;
   color: #c7295f;
@@ -61,4 +78,8 @@
 .ProductCard_image{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.animate-scroll {
+  animation: scroll 15s linear infinite;
 }
