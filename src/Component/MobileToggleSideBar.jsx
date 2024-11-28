@@ -60,7 +60,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                 className="py-1 px-1 flex justify-between"
                 style={{ borderBottom: "0.1px solid #7d8085" }}
               >
-                <NavLink to="/" className="hover:bg-slate-700">
+                <NavLink to="/Product/TShirt" className="hover:bg-slate-700">
                   <b>PRODUCT CATEGORY</b>
                 </NavLink>
                 <IoIosArrowDown />
@@ -68,7 +68,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
               {isMobileProduct && (
                 <div className="d-block justify-between w-[100%] px-2 mx-auto">
                   <NavLink
-                    to="/TShirt"
+                    to="/Product/TShirt"
                     onClick={handleCloseSidebar}
                     className="hover:bg-slate-700"
                   >
@@ -77,37 +77,52 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                     </div>
                   </NavLink>
                   <NavLink
-                    to="/Sports"
+                    to="/Product/Hoodies"
                     onClick={handleCloseSidebar}
                     className="hover:bg-slate-700"
                   >
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
-                      <b>SPORTS</b>
+                      <b>HOODIES</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Promotional" onClick={handleCloseSidebar}>
+                  <NavLink to="/Product/Tracksuits" onClick={handleCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
-                      <b>PROMOTIONAL</b>
+                      <b>TRACKSUITS</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Corporate" onClick={handleCloseSidebar}>
+                  <NavLink to="/Product/Sweatshirts" onClick={handleCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
-                      <b>CORPORATE</b>
+                      <b>SWEATSHIRTS</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Uniform" onClick={handleCloseSidebar}>
+                  <NavLink to="/Product/Jackets" onClick={handleCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
-                      <b>UNIFORM</b>
+                      <b>JACKETS</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Accessories" onClick={handleCloseSidebar}>
+                  <NavLink to="/Product/Bottoms" onClick={handleCloseSidebar}>
+                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
+                      <b>BOTTOM</b>
+                    </div>
+                  </NavLink>
+                  <NavLink to="/Product/Uniform" onClick={handleCloseSidebar}>
+                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
+                      <b>SCHOOL UNIFORM</b>
+                    </div>
+                  </NavLink>
+                  <NavLink to="/Product/Jersey" onClick={handleCloseSidebar}>
+                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
+                      <b>JERSEY</b>
+                    </div>
+                  </NavLink>
+                  <NavLink to="/Product/CricketKit" onClick={handleCloseSidebar}>
+                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
+                      <b>CRICKET KIT</b>
+                    </div>
+                  </NavLink>
+                  <NavLink to="/Product/Accessories" onClick={handleCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>ACCESSORIES</b>
-                    </div>
-                  </NavLink>
-                  <NavLink to="/Eventwear" onClick={handleCloseSidebar}>
-                    <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
-                      <b>EVENTWEAR</b>
                     </div>
                   </NavLink>
                   <NavLink to="/" onClick={handleDesignCloseSidebar}>

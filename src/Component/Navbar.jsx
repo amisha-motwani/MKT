@@ -79,7 +79,7 @@ export default function Navbar({ children }) {
                   </li>
                   <li onClick={() => setIsProduct(!isProduct)}>
                     <NavLink
-                      to="/TShirts"
+                      to="/Product/TShirts"
                       className={({ isActive }) =>
                         isActive ? "text-[#004080] font-bold" : "text-black"
                       }
@@ -148,9 +148,9 @@ export default function Navbar({ children }) {
               xs={12}
               className="d-flex py-4 justify-content-center bg-[#e9643c] text-white"
             >
-              <div className="d-flex justify-between w-[97%] mx-auto">
+              <div className="d-flex justify-between w-[99%] mx-auto">
                 <NavLink
-                  to="/TShirt"
+                  to="/Product/TShirt"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -162,7 +162,7 @@ export default function Navbar({ children }) {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Sports"
+                  to="/Product/Hoodies"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -170,11 +170,11 @@ export default function Navbar({ children }) {
                   }
                 >
                   <div>
-                    <b>SPORTSWEAR</b>
+                    <b>HOODIES</b>
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Promotional"
+                  to="/Product/Tracksuits"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -182,11 +182,11 @@ export default function Navbar({ children }) {
                   }
                 >
                   <div>
-                    <b>PROMOTIONAL CLOTHING</b>
+                    <b>TRACKSUITS</b>
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Corporate"
+                  to="/Product/Sweatshirts"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -194,11 +194,35 @@ export default function Navbar({ children }) {
                   }
                 >
                   <div>
-                    <b>CORPORATEWEAR</b>
+                    <b>SWEATSHIRTS</b>
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Uniform"
+                  to="/Product/Jackets"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                      : "text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                  }
+                >
+                  <div>
+                    <b>JACKETS</b>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/Product/Bottoms"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                      : "text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                  }
+                >
+                  <div>
+                    <b>BOTTOM</b>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/Product/Uniform"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -210,7 +234,31 @@ export default function Navbar({ children }) {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Accessories"
+                  to="/Product/Jersey"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                      : "text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                  }
+                >
+                  <div>
+                    <b>JERSEY</b>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/Product/CricketKit"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                      : "text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
+                  }
+                >
+                  <div>
+                    <b>CRICKET KIT</b>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/Product/Accessories"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
@@ -221,18 +269,7 @@ export default function Navbar({ children }) {
                     <b>ACCESSORIES</b>
                   </div>
                 </NavLink>
-                <NavLink
-                  to="/Eventwear"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
-                      : "text-white mx-auto lg:text-[16px] md:text-[14px] text-[12px]"
-                  }
-                >
-                  <div>
-                    <b>EVENTWEAR</b>
-                  </div>
-                </NavLink>
+                
                 <NavLink
                   to="/"
                   className={({ isActive }) =>

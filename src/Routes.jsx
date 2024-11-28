@@ -20,6 +20,7 @@ import TShirt from "./pages/ProductCategory/TShirt.jsx";
 import Eventwear from "./pages/ProductCategory/Eventwear.jsx";
 import BeyondBusiness from "./pages/BeyondBusiness.jsx";
 import Promotional from "./pages/ProductCategory/Promotional.jsx";
+import Product from "./pages/ProductCategory/Product.jsx";
 
 const AppRoutes = () => {
   return (
@@ -30,6 +31,7 @@ const AppRoutes = () => {
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/DesignYourOwn" element={<DesignYourOwn />} />
+            <Route path="/Product/:id" element= {<Product/>} />
             <Route path="/TShirt" element={<TShirt />} />
             <Route path="/Teamwear" element={<Teamwear />} />
             <Route path="/Sports" element={<Sports />} />
