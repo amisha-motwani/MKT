@@ -466,23 +466,20 @@ function AboutUs() {
           </div>
         </div>
         <div className="w-[20%] overflow-hidden h-[100%] flex justify-center">
-          <div className="animate-scroll flex flex-col ">
-            {images.map((img, index) => (
-              <div
-                key={index}
-                className="border border-gray-400 rounded-md w-[200px] h-[200px] my-2"
-              >
-                <img
-                  src={img}
-                  alt={`Image ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+          <div className="animate-scroll flex flex-col">
             {/* Duplicate images for smooth infinite scrolling */}
             {images.map((img, index) => (
               <div
                 key={`duplicate-${index}`}
+                className="image-container border border-gray-400 rounded-md"
+              >
+                <img src={img} alt={`Image duplicate ${index + 1}`} />
+              </div>
+            ))}
+            {/* Duplicate images to ensure continuous loop */}
+            {images.map((img, index) => (
+              <div
+                key={`duplicate2-${index}`}
                 className="image-container border border-gray-400 rounded-md"
               >
                 <img src={img} alt={`Image duplicate ${index + 1}`} />
