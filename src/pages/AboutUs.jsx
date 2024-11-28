@@ -483,13 +483,9 @@ function AboutUs() {
             {images.map((img, index) => (
               <div
                 key={`duplicate-${index}`}
-                className="border border-gray-400 rounded-md w-[200px] h-[200px] my-2"
+                className="image-container border border-gray-400 rounded-md"
               >
-                <img
-                  src={img}
-                  alt={`Image duplicate ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
+                <img src={img} alt={`Image duplicate ${index + 1}`} />
               </div>
             ))}
           </div>
