@@ -356,6 +356,7 @@ function AboutUs() {
                 width: "fit-content",
               }}
             >
+            
               Welcome to MK Textiles
             </h1>
           </div>
