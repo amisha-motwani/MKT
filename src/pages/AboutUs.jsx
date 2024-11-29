@@ -512,7 +512,7 @@ function AboutUs() {
       <h1 className="text-2xl  text-[#e8653f] text-center">
             <b className="mb-">Why MK Textiles?</b>
           </h1>
-    <div className="my-2 w-[100%] mx-auto">
+    <div className="my-2 w-[100%] mx-3">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
