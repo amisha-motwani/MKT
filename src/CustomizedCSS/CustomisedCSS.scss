@@ -41,6 +41,7 @@
     height: 1330px;
   }
 }
+
 @media screen and (max-width: 880px) {
   .imagescroll {
     height: 1440px;
@@ -59,6 +60,11 @@
 @media screen and (max-width: 500px) {
   .imagescroll {
     height: 1950px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .imagescroll {
+    height: 2190px;
   }
 }
 @media screen and (max-width: 400px) {
