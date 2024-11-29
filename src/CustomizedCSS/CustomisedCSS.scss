@@ -35,6 +35,48 @@
 }
 // ========================= ABOUT US ==================================
 
+
+@media screen and (min-width: 1000px) {
+  .imagescroll {
+    height: 1330px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .imagescroll {
+    height: 1440px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .imagescroll {
+    height: 1600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imagescroll {
+    height: 1730px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imagescroll {
+    height: 1950px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imagescroll {
+    height: 2280px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .imagescroll {
+    height: 2280px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .imagescroll {
+    height: 5000px;
+  }
+}
+
 // infinite vertical scrolling animation
 @keyframes scroll {
   0% {
@@ -42,7 +84,7 @@
   }
   100% {
     transform: translateY(
-      -30%
+      -120%
     ); /* Moves up to half the content for a seamless loop */
   }
 }
@@ -94,8 +136,8 @@
   color: #c7295f;
 }
 .vertical-timeline-element-content {
-  margin-left: 40px !important;
-  margin-right: -20px !important;
+  margin-left: 50px !important;
+  margin-right: -10px !important;
 }
 
 .vertical-timeline::before {

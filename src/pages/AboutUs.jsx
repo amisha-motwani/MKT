@@ -1,7 +1,7 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { LiaHandPointRightSolid } from "react-icons/lia";
 import { FaHandPointRight } from "react-icons/fa";
 import AboutUsImg from "../Images/AboutUsImg.png";
@@ -23,6 +23,20 @@ import Sweatshirt2 from "../Images/AdProducts/Sweatshirt2.jpg";
 import Sweatshirt3 from "../Images/AdProducts/Sweatshirt3.jpg";
 import vest1 from "../Images/AdProducts/vest1.jpg";
 import vest2 from "../Images/AdProducts/vest2.jpg";
+
+
+import bhaiya1 from "../Images/AdProducts/bhaiya1.jpg";
+import bhaiya2 from "../Images/AdProducts/bhaiya2.jpg";
+import bhaiya3 from "../Images/AdProducts/bhaiya3.jpg";
+import bhaiya4 from "../Images/AdProducts/bhaiya4.jpg";
+import bhaiya5 from "../Images/AdProducts/bhaiya5.jpg";
+import Collar1 from "../Images/AdProducts/Collar1.jpg";
+import Collar2 from "../Images/AdProducts/Collar2.jpg";
+import Collar3 from "../Images/AdProducts/Collar3.jpg";
+import Collar4 from "../Images/AdProducts/Collar4.jpg";
+import Collar5 from "../Images/AdProducts/Collar5.jpg";
+import Collar6 from "../Images/AdProducts/Collar6.jpg";
+import turtle1 from "../Images/AdProducts/turtle1.jpg";
 
 // import {Bottom1} from "../Images/AdProducts/Bottom1.jpg"
 import {
@@ -97,6 +111,18 @@ function AboutUs() {
     Sweatshirt2,
     Hoodie2,
     GymHoodie,
+    bhaiya1,
+    bhaiya2,
+    bhaiya3,
+    bhaiya4,
+    bhaiya5,
+    Collar1,
+    Collar2,
+    Collar3,
+    Collar4,
+    Collar5,
+    Collar6,
+    turtle1,
     Hoodie3,
     vest1,
     Bottom1,
@@ -454,21 +480,10 @@ function AboutUs() {
               </p>
             </div>
           </div>
-          <h1 className="text-2xl my-4 text-[#e8653f] text-center">
-            <b className="mb-">Why MK Textiles?</b>
-          </h1>
-          <div className="my-5 w-[90%] mx-auto ">
-            <VerticalTimeline>
-              {experiences.map((experience, index) => (
-                <ExperienceCard
-                  key={`experience-${index}`}
-                  experience={experience}
-                />
-              ))}
-            </VerticalTimeline>
-          </div>
+         
+          
         </div>
-        <div className="md:w-[20%] w-[25%] overflow-hidden h-[2600px] flex justify-center">
+        <div className="md:w-[20%] w-[25%] imagescroll overflow-hidden flex justify-center">
           <div className="animate-scroll flex flex-col">
             {/* Duplicate images for smooth infinite scrolling */}
             {images.map((img, index) => (
@@ -491,7 +506,25 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      
+
+
+      <h1 className="text-2xl  text-[#e8653f] text-center">
+            <b className="mb-">Why MK Textiles?</b>
+          </h1>
+    <div className="my-2 w-[100%] mx-auto">
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
     </>
+
+
   );
 }
 
