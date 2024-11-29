@@ -1,4 +1,7 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { LiaHandPointRightSolid } from "react-icons/lia";
 import { FaHandPointRight } from "react-icons/fa";
 import AboutUsImg from "../Images/AboutUsImg.png";
@@ -465,7 +468,7 @@ function AboutUs() {
             </VerticalTimeline>
           </div>
         </div>
-        <div className="md:w-[20%] w-[25%] overflow-hidden h-[100%] flex justify-center">
+        <div className="md:w-[20%] w-[25%] overflow-hidden h-[2600px] flex justify-center">
           <div className="animate-scroll flex flex-col">
             {/* Duplicate images for smooth infinite scrolling */}
             {images.map((img, index) => (
