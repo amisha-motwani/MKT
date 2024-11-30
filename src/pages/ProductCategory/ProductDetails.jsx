@@ -205,6 +205,12 @@ function ProductDetails() {
                   </td>
                 </tr>
                 <tr>
+                  <td className="px-2">Minimum order quantity</td>
+                  <td className="px-2">
+                    {data?.Product_Quantity ? data.Product_Quantity : "NA"}
+                  </td>
+                </tr>
+                <tr>
                   <td className="px-2">Country of Origin</td>
                   <td className="px-2">India</td>
                 </tr>
