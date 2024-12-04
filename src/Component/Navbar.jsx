@@ -79,7 +79,7 @@ export default function Navbar({ children }) {
                   </li>
                   <li onClick={() => setIsProduct(!isProduct)}>
                     <NavLink
-                      to="/Product/TShirts"
+                      to="/Product/TShirt"
                       className={({ isActive }) =>
                         isActive ? "text-[#004080] font-bold" : "text-black"
                       }
