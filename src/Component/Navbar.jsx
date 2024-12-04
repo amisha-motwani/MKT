@@ -186,7 +186,7 @@ export default function Navbar({ children }) {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/Product/Sweatshirts"
+                  to="/Product/Sweaters"
                   className={({ isActive }) =>
                     isActive
                       ? "text-[#004080] mx-auto lg:text-[16px] md:text-[14px] text-[12px]"

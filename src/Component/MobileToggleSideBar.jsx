@@ -90,7 +90,7 @@ const MobileToggleSideBar = ({ isSideBarVisible, setIsSideBarVisible }) => {
                       <b>TRACKSUITS</b>
                     </div>
                   </NavLink>
-                  <NavLink to="/Product/Sweatshirts" onClick={handleCloseSidebar}>
+                  <NavLink to="/Product/Sweaters" onClick={handleCloseSidebar}>
                     <div className=" mx-auto lg:text-[16px] md:text-[14px] text-[12px] py-1 hover:bg-slate-700">
                       <b>SWEATSHIRTS</b>
                     </div>

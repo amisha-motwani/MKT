@@ -77,12 +77,12 @@ const Product = () => {
               style={{ width: "100%" }}
             >
               <option value="TShirt"> T-Shirt </option>
-              <option value="WorkTShirt"> Work T-Shirt </option>
-              <option value="PoloTShirt"> Polo T-Shirt </option>
-              <option value="PromotionalTShirt">Promotional T-Shirt</option>
-              <option value="RunningTShirt"> Running T-Shirt </option>
-              <option value="SandowsTShirt"> Sandows T-Shirt </option>
-              <option value="KabbadiShirt"> Kabbadi T-Shirt </option>
+              <option value="Work"> Work T-Shirt </option>
+              <option value="Polo"> Polo T-Shirt </option>
+              <option value="Promotional">Promotional T-Shirt</option>
+              <option value="Running"> Running T-Shirt </option>
+              <option value="Sandows"> Sandows T-Shirt </option>
+              <option value="Kabbadi"> Kabbadi T-Shirt </option>
             </Form.Select>
           </div>
         )}
